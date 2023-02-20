@@ -11,9 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Hello World")
+        print("Xcode Server Setup Complete")
     }
 
-
 }
-

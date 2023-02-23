@@ -9,7 +9,7 @@ import XCTest
 @testable import JenkinsFramework
 
 class JenkinsFrameworkTests: XCTestCase {
-    let sut = JenkinsFramework.shared
+    let sut = Jenkins.shared
     
     override func setUpWithError() throws {
         try super.setUpWithError()

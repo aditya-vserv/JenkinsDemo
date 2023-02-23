@@ -1,5 +1,5 @@
 //
-//  JenkinsFramework.swift
+//  Jenkins.swift
 //  JenkinsFramework
 //
 //  Created by Admin_Vserv on 20/02/23.
@@ -7,10 +7,10 @@
 
 import Foundation
 
-public class JenkinsFramework: NSObject {
+public class Jenkins: NSObject {
     private override init() {}
-    static public var shared: JenkinsFramework = {
-        let instance = JenkinsFramework()
+    static public var shared: Jenkins = {
+        let instance = Jenkins()
         return instance
     }()
     public func setupJenkinsFramework() {

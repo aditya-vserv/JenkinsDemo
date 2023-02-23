@@ -10,7 +10,7 @@
 		1D9AFFD029A7538900D8CAE8 /* JenkinsFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9AFFCF29A7538900D8CAE8 /* JenkinsFrameworkTests.swift */; };
 		1D9AFFD129A7538900D8CAE8 /* JenkinsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA7AE7F29A3A6CA00F82C7E /* JenkinsFramework.framework */; };
 		1DA7AE8329A3A6CA00F82C7E /* JenkinsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA7AE8229A3A6CA00F82C7E /* JenkinsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DA7AE8A29A3A70800F82C7E /* JenkinsFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7AE8929A3A70800F82C7E /* JenkinsFramework.swift */; };
+		1DA7AE8A29A3A70800F82C7E /* Jenkins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7AE8929A3A70800F82C7E /* Jenkins.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,7 @@
 		1D9AFFCF29A7538900D8CAE8 /* JenkinsFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JenkinsFrameworkTests.swift; sourceTree = "<group>"; };
 		1DA7AE7F29A3A6CA00F82C7E /* JenkinsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JenkinsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA7AE8229A3A6CA00F82C7E /* JenkinsFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JenkinsFramework.h; sourceTree = "<group>"; };
-		1DA7AE8929A3A70800F82C7E /* JenkinsFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JenkinsFramework.swift; sourceTree = "<group>"; };
+		1DA7AE8929A3A70800F82C7E /* Jenkins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jenkins.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				1DA7AE8229A3A6CA00F82C7E /* JenkinsFramework.h */,
-				1DA7AE8929A3A70800F82C7E /* JenkinsFramework.swift */,
+				1DA7AE8929A3A70800F82C7E /* Jenkins.swift */,
 			);
 			path = JenkinsFramework;
 			sourceTree = "<group>";
@@ -203,7 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DA7AE8A29A3A70800F82C7E /* JenkinsFramework.swift in Sources */,
+				1DA7AE8A29A3A70800F82C7E /* Jenkins.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

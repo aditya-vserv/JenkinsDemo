@@ -26,5 +26,11 @@ class JenkinsFrameworkTests: XCTestCase {
         XCTAssertTrue(sut.sub(a1: value1, a2: value2) == 2)
         XCTAssertTrue(sut.multiply(a1: value1, a2: value2) == 15)
     }
+    
+    func testFailure() throws {
+        let value1 = 5
+        let value2 = 3
+        XCTAssertTrue(sut.add(a1: value1, a2: value2) == value1)
+    }
 
 }

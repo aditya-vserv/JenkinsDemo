@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import JenkinsFramework
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        Jenkins.shared.setupJenkinsFramework()
         print("Xcode Server Setup Complete")
     }
 

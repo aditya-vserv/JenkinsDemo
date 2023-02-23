@@ -1,0 +1,16 @@
+PODS:
+  - JenkinsLibrary (0.0.2)
+
+DEPENDENCIES:
+  - JenkinsLibrary
+
+SPEC REPOS:
+  trunk:
+    - JenkinsLibrary
+
+SPEC CHECKSUMS:
+  JenkinsLibrary: d72caa47f99b7145a11ebebb52a6a33ffb0f1210
+
+PODFILE CHECKSUM: 087ffd778671b1978e33889d3f610751c26dd70c
+
+COCOAPODS: 1.11.3

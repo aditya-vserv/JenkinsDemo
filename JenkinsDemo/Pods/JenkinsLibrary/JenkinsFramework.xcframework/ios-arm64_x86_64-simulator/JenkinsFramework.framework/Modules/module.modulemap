@@ -1,0 +1,11 @@
+framework module JenkinsFramework {
+  umbrella header "JenkinsFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module JenkinsFramework.Swift {
+    header "JenkinsFramework-Swift.h"
+    requires objc
+}

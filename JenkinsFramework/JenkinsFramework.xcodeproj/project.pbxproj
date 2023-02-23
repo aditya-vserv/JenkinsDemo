@@ -7,17 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D9AFFD029A7538900D8CAE8 /* JenkinsFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9AFFCF29A7538900D8CAE8 /* JenkinsFrameworkTests.swift */; };
+		1D9AFFD129A7538900D8CAE8 /* JenkinsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA7AE7F29A3A6CA00F82C7E /* JenkinsFramework.framework */; };
 		1DA7AE8329A3A6CA00F82C7E /* JenkinsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA7AE8229A3A6CA00F82C7E /* JenkinsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DA7AE8A29A3A70800F82C7E /* JenkinsFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7AE8929A3A70800F82C7E /* JenkinsFramework.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1D9AFFD229A7538900D8CAE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DA7AE7629A3A6CA00F82C7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DA7AE7E29A3A6CA00F82C7E;
+			remoteInfo = JenkinsFramework;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1D9AFFCD29A7538900D8CAE8 /* JenkinsFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JenkinsFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D9AFFCF29A7538900D8CAE8 /* JenkinsFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JenkinsFrameworkTests.swift; sourceTree = "<group>"; };
 		1DA7AE7F29A3A6CA00F82C7E /* JenkinsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JenkinsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA7AE8229A3A6CA00F82C7E /* JenkinsFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JenkinsFramework.h; sourceTree = "<group>"; };
 		1DA7AE8929A3A70800F82C7E /* JenkinsFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JenkinsFramework.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1D9AFFCA29A7538900D8CAE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D9AFFD129A7538900D8CAE8 /* JenkinsFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1DA7AE7C29A3A6CA00F82C7E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -28,10 +50,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D9AFFCE29A7538900D8CAE8 /* JenkinsFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				1D9AFFCF29A7538900D8CAE8 /* JenkinsFrameworkTests.swift */,
+			);
+			path = JenkinsFrameworkTests;
+			sourceTree = "<group>";
+		};
 		1DA7AE7529A3A6CA00F82C7E = {
 			isa = PBXGroup;
 			children = (
 				1DA7AE8129A3A6CA00F82C7E /* JenkinsFramework */,
+				1D9AFFCE29A7538900D8CAE8 /* JenkinsFrameworkTests */,
 				1DA7AE8029A3A6CA00F82C7E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				1DA7AE7F29A3A6CA00F82C7E /* JenkinsFramework.framework */,
+				1D9AFFCD29A7538900D8CAE8 /* JenkinsFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +99,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1D9AFFCC29A7538900D8CAE8 /* JenkinsFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D9AFFD629A7538900D8CAE8 /* Build configuration list for PBXNativeTarget "JenkinsFrameworkTests" */;
+			buildPhases = (
+				1D9AFFC929A7538900D8CAE8 /* Sources */,
+				1D9AFFCA29A7538900D8CAE8 /* Frameworks */,
+				1D9AFFCB29A7538900D8CAE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D9AFFD329A7538900D8CAE8 /* PBXTargetDependency */,
+			);
+			name = JenkinsFrameworkTests;
+			productName = JenkinsFrameworkTests;
+			productReference = 1D9AFFCD29A7538900D8CAE8 /* JenkinsFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1DA7AE7E29A3A6CA00F82C7E /* JenkinsFramework */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DA7AE8629A3A6CA00F82C7E /* Build configuration list for PBXNativeTarget "JenkinsFramework" */;
@@ -92,8 +142,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					1D9AFFCC29A7538900D8CAE8 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
 					1DA7AE7E29A3A6CA00F82C7E = {
 						CreatedOnToolsVersion = 13.3.1;
 						LastSwiftMigration = 1330;
@@ -114,11 +168,19 @@
 			projectRoot = "";
 			targets = (
 				1DA7AE7E29A3A6CA00F82C7E /* JenkinsFramework */,
+				1D9AFFCC29A7538900D8CAE8 /* JenkinsFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1D9AFFCB29A7538900D8CAE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1DA7AE7D29A3A6CA00F82C7E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -129,6 +191,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1D9AFFC929A7538900D8CAE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D9AFFD029A7538900D8CAE8 /* JenkinsFrameworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1DA7AE7B29A3A6CA00F82C7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,7 +209,45 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1D9AFFD329A7538900D8CAE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DA7AE7E29A3A6CA00F82C7E /* JenkinsFramework */;
+			targetProxy = 1D9AFFD229A7538900D8CAE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1D9AFFD429A7538900D8CAE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aditya.JenkinsFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D9AFFD529A7538900D8CAE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aditya.JenkinsFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		1DA7AE8429A3A6CA00F82C7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -322,6 +430,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1D9AFFD629A7538900D8CAE8 /* Build configuration list for PBXNativeTarget "JenkinsFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D9AFFD429A7538900D8CAE8 /* Debug */,
+				1D9AFFD529A7538900D8CAE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1DA7AE7929A3A6CA00F82C7E /* Build configuration list for PBXProject "JenkinsFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

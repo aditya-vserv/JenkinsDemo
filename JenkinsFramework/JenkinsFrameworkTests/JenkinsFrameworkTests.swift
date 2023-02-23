@@ -6,19 +6,25 @@
 //
 
 import XCTest
+@testable import JenkinsFramework
 
 class JenkinsFrameworkTests: XCTestCase {
-
+    let sut = JenkinsFramework.shared
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        try super.setUpWithError()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        try super.tearDownWithError()
     }
 
-    func testExample() throws {
-        
+    func testHappyPath() throws {
+        let value1 = 5
+        let value2 = 3
+        XCTAssertTrue(sut.add(a1: value1, a2: value2) == 8)
+        XCTAssertTrue(sut.sub(a1: value1, a2: value2) == 2)
+        XCTAssertTrue(sut.multiply(a1: value1, a2: value2) == 15)
     }
 
 }

@@ -16,4 +16,13 @@ public class JenkinsFramework: NSObject {
     public func setupJenkinsFramework() {
         print("Welcome to Jenkins Framework via Xcode Server")
     }
+    public func add(a1: Int, a2: Int) -> Int {
+        return a1 + a2
+    }
+    public func sub(a1: Int, a2: Int) -> Int {
+        return a1 - a2
+    }
+    public func multiply(a1: Int, a2: Int) -> Int {
+        return a1 * a2
+    }
 }

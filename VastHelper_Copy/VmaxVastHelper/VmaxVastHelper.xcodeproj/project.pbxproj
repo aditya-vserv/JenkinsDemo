@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D21593029ACD19D0019FF37 /* Vmax.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D21592F29ACD19D0019FF37 /* Vmax.xcframework */; };
-		1D21593129ACD19D0019FF37 /* Vmax.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1D21592F29ACD19D0019FF37 /* Vmax.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1D21593429ACD2DD0019FF37 /* Vmax.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D21593329ACD2DD0019FF37 /* Vmax.xcframework */; };
+		1D21593529ACD2DD0019FF37 /* Vmax.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1D21593329ACD2DD0019FF37 /* Vmax.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1D2A22EE299503F900CF4D50 /* VmaxVastParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A22ED299503F900CF4D50 /* VmaxVastParserTests.swift */; };
 		1D2A22F02995040C00CF4D50 /* MockVmaxVastParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A22EF2995040C00CF4D50 /* MockVmaxVastParser.swift */; };
 		1D2A22FF29950CF400CF4D50 /* VmaxMediaFileSelectionValdationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A22F229950CF400CF4D50 /* VmaxMediaFileSelectionValdationTests.swift */; };
@@ -58,13 +58,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1D21593229ACD19D0019FF37 /* Embed Frameworks */ = {
+		1D21593629ACD2DD0019FF37 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1D21593129ACD19D0019FF37 /* Vmax.xcframework in Embed Frameworks */,
+				1D21593529ACD2DD0019FF37 /* Vmax.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,7 +72,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1D21592F29ACD19D0019FF37 /* Vmax.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Vmax.xcframework; path = "../../../../Vserv_Git/vmaxng-sdk-ios/Vmax.xcframework"; sourceTree = "<group>"; };
+		1D21593329ACD2DD0019FF37 /* Vmax.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Vmax.xcframework; path = ../Vmax.xcframework; sourceTree = "<group>"; };
 		1D2A22ED299503F900CF4D50 /* VmaxVastParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmaxVastParserTests.swift; sourceTree = "<group>"; };
 		1D2A22EF2995040C00CF4D50 /* MockVmaxVastParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockVmaxVastParser.swift; sourceTree = "<group>"; };
 		1D2A22F229950CF400CF4D50 /* VmaxMediaFileSelectionValdationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmaxMediaFileSelectionValdationTests.swift; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D21593029ACD19D0019FF37 /* Vmax.xcframework in Frameworks */,
+				1D21593429ACD2DD0019FF37 /* Vmax.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +291,7 @@
 		B93E777F2948599000E6081D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1D21592F29ACD19D0019FF37 /* Vmax.xcframework */,
+				1D21593329ACD2DD0019FF37 /* Vmax.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -319,7 +319,7 @@
 				B93E77082948588D00E6081D /* Frameworks */,
 				B93E77092948588D00E6081D /* Resources */,
 				B9218CA829532B420070A1A6 /* ShellScript */,
-				1D21593229ACD19D0019FF37 /* Embed Frameworks */,
+				1D21593629ACD2DD0019FF37 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

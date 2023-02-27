@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D21593029ACD19D0019FF37 /* Vmax.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D21592F29ACD19D0019FF37 /* Vmax.xcframework */; };
+		1D21593129ACD19D0019FF37 /* Vmax.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1D21592F29ACD19D0019FF37 /* Vmax.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1D2A22EE299503F900CF4D50 /* VmaxVastParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A22ED299503F900CF4D50 /* VmaxVastParserTests.swift */; };
+		1D2A22F02995040C00CF4D50 /* MockVmaxVastParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A22EF2995040C00CF4D50 /* MockVmaxVastParser.swift */; };
+		1D2A22FF29950CF400CF4D50 /* VmaxMediaFileSelectionValdationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A22F229950CF400CF4D50 /* VmaxMediaFileSelectionValdationTests.swift */; };
+		1D2A230129950CF400CF4D50 /* BitratesForBandwidthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A22F529950CF400CF4D50 /* BitratesForBandwidthTests.swift */; };
+		1D2A230229950CF400CF4D50 /* BitratesTablesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A22F629950CF400CF4D50 /* BitratesTablesTest.swift */; };
+		1D2A230329950CF400CF4D50 /* BitrateAllocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A22F729950CF400CF4D50 /* BitrateAllocationTests.swift */; };
+		1D2A230529950CF400CF4D50 /* ExactFirstMatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A22FA29950CF400CF4D50 /* ExactFirstMatchTests.swift */; };
+		1D2A230629950CF400CF4D50 /* FilterProgressiveMediaFilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A22FC29950CF400CF4D50 /* FilterProgressiveMediaFilesTests.swift */; };
+		1D2A230729950CF400CF4D50 /* FilterSupportedMediaFilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A22FD29950CF400CF4D50 /* FilterSupportedMediaFilesTests.swift */; };
+		1D2A230829950CF400CF4D50 /* FilterUnsupportedMediaFilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A22FE29950CF400CF4D50 /* FilterUnsupportedMediaFilesTests.swift */; };
+		1D2A230A2995177700CF4D50 /* FilterStreamingMediaFilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A23092995177700CF4D50 /* FilterStreamingMediaFilesTests.swift */; };
+		1D36035C295C3694004DA599 /* ClosestMatchByDifferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36035B295C3694004DA599 /* ClosestMatchByDifferenceTests.swift */; };
+		B9218CA729532B360070A1A6 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B9218CA629532B360070A1A6 /* .swiftlint.yml */; };
+		B93E77102948588D00E6081D /* VmaxVastHelper.docc in Sources */ = {isa = PBXBuildFile; fileRef = B93E770F2948588D00E6081D /* VmaxVastHelper.docc */; };
+		B93E77162948588D00E6081D /* VmaxVastHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93E770B2948588D00E6081D /* VmaxVastHelper.framework */; };
+		B93E771B2948588D00E6081D /* VmaxVastHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93E771A2948588D00E6081D /* VmaxVastHelperTests.swift */; };
+		B93E771C2948588D00E6081D /* VmaxVastHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = B93E770E2948588D00E6081D /* VmaxVastHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B93E776C2948596900E6081D /* VmaxMediaFileError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93E77542948596900E6081D /* VmaxMediaFileError.swift */; };
+		B93E776D2948596900E6081D /* VmaxVastError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93E77552948596900E6081D /* VmaxVastError.swift */; };
+		B93E776E2948596900E6081D /* VmaxVastParserNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93E77572948596900E6081D /* VmaxVastParserNodes.swift */; };
+		B93E776F2948596900E6081D /* VmaxVastTrackingEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93E77582948596900E6081D /* VmaxVastTrackingEvents.swift */; };
+		B93E77702948596900E6081D /* VmaxTrackerEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93E77592948596900E6081D /* VmaxTrackerEvent.swift */; };
+		B93E77712948596900E6081D /* VmaxVastAdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93E775A2948596900E6081D /* VmaxVastAdModel.swift */; };
+		B93E77722948596900E6081D /* VmaxVastParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93E775B2948596900E6081D /* VmaxVastParser.swift */; };
+		B93E77732948596900E6081D /* VmaxMediaFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93E775D2948596900E6081D /* VmaxMediaFile.swift */; };
+		B93E77742948596900E6081D /* VmaxMediaFileSelectionValidations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93E775E2948596900E6081D /* VmaxMediaFileSelectionValidations.swift */; };
+		B93E77752948596900E6081D /* VmaxMediaFileSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93E775F2948596900E6081D /* VmaxMediaFileSelection.swift */; };
+		B93E77762948596900E6081D /* BitratesTables.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93E77612948596900E6081D /* BitratesTables.swift */; };
+		B93E77772948596900E6081D /* BitratesForBandwidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93E77622948596900E6081D /* BitratesForBandwidth.swift */; };
+		B93E77782948596900E6081D /* ExactFirstMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93E77642948596900E6081D /* ExactFirstMatch.swift */; };
+		B93E77792948596900E6081D /* ClosestMatchByDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93E77652948596900E6081D /* ClosestMatchByDifference.swift */; };
+		B93E777A2948596900E6081D /* MediaFileAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93E77662948596900E6081D /* MediaFileAlgorithms.swift */; };
+		B93E777B2948596900E6081D /* FilterProgressiveMediaFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93E77682948596900E6081D /* FilterProgressiveMediaFiles.swift */; };
+		B93E777C2948596900E6081D /* FilterMediaFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93E77692948596900E6081D /* FilterMediaFiles.swift */; };
+		B93E777D2948596900E6081D /* FilterSupportedMediaFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93E776A2948596900E6081D /* FilterSupportedMediaFiles.swift */; };
+		B93E777E2948596900E6081D /* VmaxXmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93E776B2948596900E6081D /* VmaxXmlParser.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B93E77172948588D00E6081D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B93E77022948588D00E6081D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B93E770A2948588D00E6081D;
+			remoteInfo = VmaxVastHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1D21593229ACD19D0019FF37 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1D21593129ACD19D0019FF37 /* Vmax.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1D21592F29ACD19D0019FF37 /* Vmax.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Vmax.xcframework; path = "../../../../Vserv_Git/vmaxng-sdk-ios/Vmax.xcframework"; sourceTree = "<group>"; };
+		1D2A22ED299503F900CF4D50 /* VmaxVastParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmaxVastParserTests.swift; sourceTree = "<group>"; };
+		1D2A22EF2995040C00CF4D50 /* MockVmaxVastParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockVmaxVastParser.swift; sourceTree = "<group>"; };
+		1D2A22F229950CF400CF4D50 /* VmaxMediaFileSelectionValdationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmaxMediaFileSelectionValdationTests.swift; sourceTree = "<group>"; };
+		1D2A22F529950CF400CF4D50 /* BitratesForBandwidthTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitratesForBandwidthTests.swift; sourceTree = "<group>"; };
+		1D2A22F629950CF400CF4D50 /* BitratesTablesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitratesTablesTest.swift; sourceTree = "<group>"; };
+		1D2A22F729950CF400CF4D50 /* BitrateAllocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitrateAllocationTests.swift; sourceTree = "<group>"; };
+		1D2A22FA29950CF400CF4D50 /* ExactFirstMatchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExactFirstMatchTests.swift; sourceTree = "<group>"; };
+		1D2A22FC29950CF400CF4D50 /* FilterProgressiveMediaFilesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterProgressiveMediaFilesTests.swift; sourceTree = "<group>"; };
+		1D2A22FD29950CF400CF4D50 /* FilterSupportedMediaFilesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterSupportedMediaFilesTests.swift; sourceTree = "<group>"; };
+		1D2A22FE29950CF400CF4D50 /* FilterUnsupportedMediaFilesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterUnsupportedMediaFilesTests.swift; sourceTree = "<group>"; };
+		1D2A23092995177700CF4D50 /* FilterStreamingMediaFilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterStreamingMediaFilesTests.swift; sourceTree = "<group>"; };
+		1D36035B295C3694004DA599 /* ClosestMatchByDifferenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosestMatchByDifferenceTests.swift; sourceTree = "<group>"; };
+		B9218CA629532B360070A1A6 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		B93E770B2948588D00E6081D /* VmaxVastHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VmaxVastHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B93E770E2948588D00E6081D /* VmaxVastHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VmaxVastHelper.h; sourceTree = "<group>"; };
+		B93E770F2948588D00E6081D /* VmaxVastHelper.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = VmaxVastHelper.docc; sourceTree = "<group>"; };
+		B93E77152948588D00E6081D /* VmaxVastHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VmaxVastHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B93E771A2948588D00E6081D /* VmaxVastHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VmaxVastHelperTests.swift; sourceTree = "<group>"; };
+		B93E77542948596900E6081D /* VmaxMediaFileError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmaxMediaFileError.swift; sourceTree = "<group>"; };
+		B93E77552948596900E6081D /* VmaxVastError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmaxVastError.swift; sourceTree = "<group>"; };
+		B93E77572948596900E6081D /* VmaxVastParserNodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmaxVastParserNodes.swift; sourceTree = "<group>"; };
+		B93E77582948596900E6081D /* VmaxVastTrackingEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmaxVastTrackingEvents.swift; sourceTree = "<group>"; };
+		B93E77592948596900E6081D /* VmaxTrackerEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmaxTrackerEvent.swift; sourceTree = "<group>"; };
+		B93E775A2948596900E6081D /* VmaxVastAdModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmaxVastAdModel.swift; sourceTree = "<group>"; };
+		B93E775B2948596900E6081D /* VmaxVastParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmaxVastParser.swift; sourceTree = "<group>"; };
+		B93E775D2948596900E6081D /* VmaxMediaFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmaxMediaFile.swift; sourceTree = "<group>"; };
+		B93E775E2948596900E6081D /* VmaxMediaFileSelectionValidations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmaxMediaFileSelectionValidations.swift; sourceTree = "<group>"; };
+		B93E775F2948596900E6081D /* VmaxMediaFileSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmaxMediaFileSelection.swift; sourceTree = "<group>"; };
+		B93E77612948596900E6081D /* BitratesTables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitratesTables.swift; sourceTree = "<group>"; };
+		B93E77622948596900E6081D /* BitratesForBandwidth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitratesForBandwidth.swift; sourceTree = "<group>"; };
+		B93E77642948596900E6081D /* ExactFirstMatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExactFirstMatch.swift; sourceTree = "<group>"; };
+		B93E77652948596900E6081D /* ClosestMatchByDifference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosestMatchByDifference.swift; sourceTree = "<group>"; };
+		B93E77662948596900E6081D /* MediaFileAlgorithms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaFileAlgorithms.swift; sourceTree = "<group>"; };
+		B93E77682948596900E6081D /* FilterProgressiveMediaFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterProgressiveMediaFiles.swift; sourceTree = "<group>"; };
+		B93E77692948596900E6081D /* FilterMediaFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterMediaFiles.swift; sourceTree = "<group>"; };
+		B93E776A2948596900E6081D /* FilterSupportedMediaFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterSupportedMediaFiles.swift; sourceTree = "<group>"; };
+		B93E776B2948596900E6081D /* VmaxXmlParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VmaxXmlParser.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B93E77082948588D00E6081D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D21593029ACD19D0019FF37 /* Vmax.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B93E77122948588D00E6081D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B93E77162948588D00E6081D /* VmaxVastHelper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D2A22F129950CF400CF4D50 /* VmaxMediaFileSelection */ = {
+			isa = PBXGroup;
+			children = (
+				1D2A22F429950CF400CF4D50 /* BitratesInfo */,
+				1D2A22F829950CF400CF4D50 /* MediaFileAlgorithm */,
+				1D2A22FB29950CF400CF4D50 /* FilterMediaFiles */,
+				1D2A22F229950CF400CF4D50 /* VmaxMediaFileSelectionValdationTests.swift */,
+			);
+			path = VmaxMediaFileSelection;
+			sourceTree = "<group>";
+		};
+		1D2A22F429950CF400CF4D50 /* BitratesInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1D2A22F529950CF400CF4D50 /* BitratesForBandwidthTests.swift */,
+				1D2A22F629950CF400CF4D50 /* BitratesTablesTest.swift */,
+				1D2A22F729950CF400CF4D50 /* BitrateAllocationTests.swift */,
+			);
+			path = BitratesInfo;
+			sourceTree = "<group>";
+		};
+		1D2A22F829950CF400CF4D50 /* MediaFileAlgorithm */ = {
+			isa = PBXGroup;
+			children = (
+				1D36035B295C3694004DA599 /* ClosestMatchByDifferenceTests.swift */,
+				1D2A22FA29950CF400CF4D50 /* ExactFirstMatchTests.swift */,
+			);
+			path = MediaFileAlgorithm;
+			sourceTree = "<group>";
+		};
+		1D2A22FB29950CF400CF4D50 /* FilterMediaFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1D2A22FC29950CF400CF4D50 /* FilterProgressiveMediaFilesTests.swift */,
+				1D2A23092995177700CF4D50 /* FilterStreamingMediaFilesTests.swift */,
+				1D2A22FD29950CF400CF4D50 /* FilterSupportedMediaFilesTests.swift */,
+				1D2A22FE29950CF400CF4D50 /* FilterUnsupportedMediaFilesTests.swift */,
+			);
+			path = FilterMediaFiles;
+			sourceTree = "<group>";
+		};
+		B93E77012948588D00E6081D = {
+			isa = PBXGroup;
+			children = (
+				B9218CA629532B360070A1A6 /* .swiftlint.yml */,
+				B93E770D2948588D00E6081D /* VmaxVastHelper */,
+				B93E77192948588D00E6081D /* VmaxVastHelperTests */,
+				B93E770C2948588D00E6081D /* Products */,
+				B93E777F2948599000E6081D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B93E770C2948588D00E6081D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B93E770B2948588D00E6081D /* VmaxVastHelper.framework */,
+				B93E77152948588D00E6081D /* VmaxVastHelperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B93E770D2948588D00E6081D /* VmaxVastHelper */ = {
+			isa = PBXGroup;
+			children = (
+				B93E77522948596900E6081D /* Source */,
+				B93E770E2948588D00E6081D /* VmaxVastHelper.h */,
+				B93E770F2948588D00E6081D /* VmaxVastHelper.docc */,
+			);
+			path = VmaxVastHelper;
+			sourceTree = "<group>";
+		};
+		B93E77192948588D00E6081D /* VmaxVastHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				1D2A22F129950CF400CF4D50 /* VmaxMediaFileSelection */,
+				B93E771A2948588D00E6081D /* VmaxVastHelperTests.swift */,
+				1D2A22ED299503F900CF4D50 /* VmaxVastParserTests.swift */,
+				1D2A22EF2995040C00CF4D50 /* MockVmaxVastParser.swift */,
+			);
+			path = VmaxVastHelperTests;
+			sourceTree = "<group>";
+		};
+		B93E77522948596900E6081D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B93E77562948596900E6081D /* Models */,
+				B93E77532948596900E6081D /* VmaxVastError */,
+				B93E775C2948596900E6081D /* VmaxMediaFileSelection */,
+				B93E775B2948596900E6081D /* VmaxVastParser.swift */,
+				B93E776B2948596900E6081D /* VmaxXmlParser.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B93E77532948596900E6081D /* VmaxVastError */ = {
+			isa = PBXGroup;
+			children = (
+				B93E77542948596900E6081D /* VmaxMediaFileError.swift */,
+				B93E77552948596900E6081D /* VmaxVastError.swift */,
+			);
+			path = VmaxVastError;
+			sourceTree = "<group>";
+		};
+		B93E77562948596900E6081D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B93E77572948596900E6081D /* VmaxVastParserNodes.swift */,
+				B93E77582948596900E6081D /* VmaxVastTrackingEvents.swift */,
+				B93E77592948596900E6081D /* VmaxTrackerEvent.swift */,
+				B93E775A2948596900E6081D /* VmaxVastAdModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B93E775C2948596900E6081D /* VmaxMediaFileSelection */ = {
+			isa = PBXGroup;
+			children = (
+				B93E775D2948596900E6081D /* VmaxMediaFile.swift */,
+				B93E775E2948596900E6081D /* VmaxMediaFileSelectionValidations.swift */,
+				B93E775F2948596900E6081D /* VmaxMediaFileSelection.swift */,
+				B93E77602948596900E6081D /* BitratesInfo */,
+				B93E77632948596900E6081D /* MediaFileAlgorithm */,
+				B93E77672948596900E6081D /* FilterMediaFiles */,
+			);
+			path = VmaxMediaFileSelection;
+			sourceTree = "<group>";
+		};
+		B93E77602948596900E6081D /* BitratesInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B93E77612948596900E6081D /* BitratesTables.swift */,
+				B93E77622948596900E6081D /* BitratesForBandwidth.swift */,
+			);
+			path = BitratesInfo;
+			sourceTree = "<group>";
+		};
+		B93E77632948596900E6081D /* MediaFileAlgorithm */ = {
+			isa = PBXGroup;
+			children = (
+				B93E77642948596900E6081D /* ExactFirstMatch.swift */,
+				B93E77652948596900E6081D /* ClosestMatchByDifference.swift */,
+				B93E77662948596900E6081D /* MediaFileAlgorithms.swift */,
+			);
+			path = MediaFileAlgorithm;
+			sourceTree = "<group>";
+		};
+		B93E77672948596900E6081D /* FilterMediaFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B93E77682948596900E6081D /* FilterProgressiveMediaFiles.swift */,
+				B93E77692948596900E6081D /* FilterMediaFiles.swift */,
+				B93E776A2948596900E6081D /* FilterSupportedMediaFiles.swift */,
+			);
+			path = FilterMediaFiles;
+			sourceTree = "<group>";
+		};
+		B93E777F2948599000E6081D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D21592F29ACD19D0019FF37 /* Vmax.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B93E77062948588D00E6081D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B93E771C2948588D00E6081D /* VmaxVastHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B93E770A2948588D00E6081D /* VmaxVastHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B93E771F2948588D00E6081D /* Build configuration list for PBXNativeTarget "VmaxVastHelper" */;
+			buildPhases = (
+				B93E77062948588D00E6081D /* Headers */,
+				B93E77072948588D00E6081D /* Sources */,
+				B93E77082948588D00E6081D /* Frameworks */,
+				B93E77092948588D00E6081D /* Resources */,
+				B9218CA829532B420070A1A6 /* ShellScript */,
+				1D21593229ACD19D0019FF37 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VmaxVastHelper;
+			productName = VmaxVastHelper;
+			productReference = B93E770B2948588D00E6081D /* VmaxVastHelper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B93E77142948588D00E6081D /* VmaxVastHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B93E77222948588D00E6081D /* Build configuration list for PBXNativeTarget "VmaxVastHelperTests" */;
+			buildPhases = (
+				B93E77112948588D00E6081D /* Sources */,
+				B93E77122948588D00E6081D /* Frameworks */,
+				B93E77132948588D00E6081D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B93E77182948588D00E6081D /* PBXTargetDependency */,
+			);
+			name = VmaxVastHelperTests;
+			productName = VmaxVastHelperTests;
+			productReference = B93E77152948588D00E6081D /* VmaxVastHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B93E77022948588D00E6081D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					B93E770A2948588D00E6081D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					B93E77142948588D00E6081D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = B93E77052948588D00E6081D /* Build configuration list for PBXProject "VmaxVastHelper" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B93E77012948588D00E6081D;
+			productRefGroup = B93E770C2948588D00E6081D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B93E770A2948588D00E6081D /* VmaxVastHelper */,
+				B93E77142948588D00E6081D /* VmaxVastHelperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B93E77092948588D00E6081D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9218CA729532B360070A1A6 /* .swiftlint.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B93E77132948588D00E6081D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9218CA829532B420070A1A6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B93E77072948588D00E6081D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B93E77762948596900E6081D /* BitratesTables.swift in Sources */,
+				B93E77742948596900E6081D /* VmaxMediaFileSelectionValidations.swift in Sources */,
+				B93E77782948596900E6081D /* ExactFirstMatch.swift in Sources */,
+				B93E776E2948596900E6081D /* VmaxVastParserNodes.swift in Sources */,
+				B93E77732948596900E6081D /* VmaxMediaFile.swift in Sources */,
+				B93E776F2948596900E6081D /* VmaxVastTrackingEvents.swift in Sources */,
+				B93E77772948596900E6081D /* BitratesForBandwidth.swift in Sources */,
+				B93E776D2948596900E6081D /* VmaxVastError.swift in Sources */,
+				B93E77702948596900E6081D /* VmaxTrackerEvent.swift in Sources */,
+				B93E77752948596900E6081D /* VmaxMediaFileSelection.swift in Sources */,
+				B93E77102948588D00E6081D /* VmaxVastHelper.docc in Sources */,
+				B93E777D2948596900E6081D /* FilterSupportedMediaFiles.swift in Sources */,
+				B93E777E2948596900E6081D /* VmaxXmlParser.swift in Sources */,
+				B93E77712948596900E6081D /* VmaxVastAdModel.swift in Sources */,
+				B93E77792948596900E6081D /* ClosestMatchByDifference.swift in Sources */,
+				B93E77722948596900E6081D /* VmaxVastParser.swift in Sources */,
+				B93E777C2948596900E6081D /* FilterMediaFiles.swift in Sources */,
+				B93E777A2948596900E6081D /* MediaFileAlgorithms.swift in Sources */,
+				B93E776C2948596900E6081D /* VmaxMediaFileError.swift in Sources */,
+				B93E777B2948596900E6081D /* FilterProgressiveMediaFiles.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B93E77112948588D00E6081D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D2A22F02995040C00CF4D50 /* MockVmaxVastParser.swift in Sources */,
+				1D2A230629950CF400CF4D50 /* FilterProgressiveMediaFilesTests.swift in Sources */,
+				1D2A230329950CF400CF4D50 /* BitrateAllocationTests.swift in Sources */,
+				1D2A230829950CF400CF4D50 /* FilterUnsupportedMediaFilesTests.swift in Sources */,
+				1D2A230129950CF400CF4D50 /* BitratesForBandwidthTests.swift in Sources */,
+				1D2A22EE299503F900CF4D50 /* VmaxVastParserTests.swift in Sources */,
+				1D2A230229950CF400CF4D50 /* BitratesTablesTest.swift in Sources */,
+				B93E771B2948588D00E6081D /* VmaxVastHelperTests.swift in Sources */,
+				1D2A230529950CF400CF4D50 /* ExactFirstMatchTests.swift in Sources */,
+				1D2A22FF29950CF400CF4D50 /* VmaxMediaFileSelectionValdationTests.swift in Sources */,
+				1D2A230A2995177700CF4D50 /* FilterStreamingMediaFilesTests.swift in Sources */,
+				1D36035C295C3694004DA599 /* ClosestMatchByDifferenceTests.swift in Sources */,
+				1D2A230729950CF400CF4D50 /* FilterSupportedMediaFilesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B93E77182948588D00E6081D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B93E770A2948588D00E6081D /* VmaxVastHelper */;
+			targetProxy = B93E77172948588D00E6081D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B93E771D2948588D00E6081D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B93E771E2948588D00E6081D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B93E77202948588D00E6081D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AV92ZNV2LR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vserv.VmaxVastHelper;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B93E77212948588D00E6081D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AV92ZNV2LR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vserv.VmaxVastHelper;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B93E77232948588D00E6081D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AV92ZNV2LR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vserv.VmaxVastHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B93E77242948588D00E6081D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AV92ZNV2LR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vserv.VmaxVastHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B93E77052948588D00E6081D /* Build configuration list for PBXProject "VmaxVastHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B93E771D2948588D00E6081D /* Debug */,
+				B93E771E2948588D00E6081D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B93E771F2948588D00E6081D /* Build configuration list for PBXNativeTarget "VmaxVastHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B93E77202948588D00E6081D /* Debug */,
+				B93E77212948588D00E6081D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B93E77222948588D00E6081D /* Build configuration list for PBXNativeTarget "VmaxVastHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B93E77232948588D00E6081D /* Debug */,
+				B93E77242948588D00E6081D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B93E77022948588D00E6081D /* Project object */;
+}

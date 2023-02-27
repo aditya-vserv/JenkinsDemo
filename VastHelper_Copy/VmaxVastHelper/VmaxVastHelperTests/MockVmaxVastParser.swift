@@ -6,6 +6,7 @@
 //
 
 // swiftlint: disable all
+/*
 import Foundation
 @testable import VmaxVastHelper
 @testable import VmaxVideoHelper
@@ -867,3 +868,4 @@ extension MockVastModelFetcher {
         return click
     }
 }
+*/
